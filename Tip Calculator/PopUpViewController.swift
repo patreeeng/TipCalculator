@@ -10,7 +10,6 @@ import UIKit
 
 class PopUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var pickerView: UIPickerView!
     
     let tips =  ["18%", "20%", "25%"] // Assigns values to picker view
