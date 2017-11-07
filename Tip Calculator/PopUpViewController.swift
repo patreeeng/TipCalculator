@@ -27,10 +27,6 @@ class PopUpViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         return tips.count // Length of array
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = tips[row] // Uses the value selected by user.
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
