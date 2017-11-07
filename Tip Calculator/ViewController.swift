@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        billField.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -36,6 +40,17 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
     }
-
+    @IBAction func settingsButton(_ sender: Any) {
+    // This section is for adding the pop up window for settings.
+        
+        let popSettings = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        self.addChildViewController(popSettings) // Add the view controller for the popup view to the current view controller to display it and replace the current view
+        popSettings.view.frame = self.view.frame
+        self.view.addSubview(popSettings.view)
+        popSettings.didMove(toParentViewController: self)
+        
+        
+    }
+    
 }
 
