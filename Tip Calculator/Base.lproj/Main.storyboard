@@ -19,7 +19,7 @@
         <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
         <!--Settings-->
         <scene sceneID="m1k-Gv-qXx">
             <objects>
-                <viewController storyboardIdentifier="sbPopUpID" modalTransitionStyle="flipHorizontal" id="7g3-92-CkY" customClass="PopUpViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbPopUpID" modalTransitionStyle="partialCurl" id="7g3-92-CkY" customClass="PopUpViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOe-El-J2A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,8 +145,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VUE-3Y-3yM">
-                                <rect key="frame" x="27" y="129" width="320" height="100"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUE-3Y-3yM">
+                                <rect key="frame" x="27" y="115" width="320" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="8hp-nP-LJC"/>
                                     <constraint firstAttribute="height" constant="100" id="MoU-6v-gl2"/>
@@ -164,11 +164,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VUE-3Y-3yM" firstAttribute="centerX" secondItem="eOe-El-J2A" secondAttribute="centerX" id="4Bm-vD-Xd0"/>
-                            <constraint firstItem="VUE-3Y-3yM" firstAttribute="centerY" secondItem="eOe-El-J2A" secondAttribute="centerY" constant="-89.5" id="7Dq-9B-Ufv"/>
+                            <constraint firstItem="VUE-3Y-3yM" firstAttribute="centerY" secondItem="eOe-El-J2A" secondAttribute="centerY" constant="-168.5" id="7Dq-9B-Ufv"/>
+                            <constraint firstItem="NbW-0l-Yzo" firstAttribute="top" secondItem="RHB-w5-BSQ" secondAttribute="top" constant="37" id="BLC-7m-RDz"/>
                             <constraint firstItem="VUE-3Y-3yM" firstAttribute="centerX" secondItem="eOe-El-J2A" secondAttribute="centerX" id="Ngl-cO-P6O"/>
-                            <constraint firstItem="NbW-0l-Yzo" firstAttribute="top" secondItem="RHB-w5-BSQ" secondAttribute="top" constant="37" id="ciA-Eg-W8n"/>
-                            <constraint firstItem="RHB-w5-BSQ" firstAttribute="bottom" secondItem="VUE-3Y-3yM" secondAttribute="bottom" constant="373" id="fFA-sW-4wD"/>
-                            <constraint firstItem="NbW-0l-Yzo" firstAttribute="leading" secondItem="VUE-3Y-3yM" secondAttribute="leading" id="kbO-3l-ERz"/>
+                            <constraint firstItem="RHB-w5-BSQ" firstAttribute="bottom" secondItem="VUE-3Y-3yM" secondAttribute="bottom" constant="452" id="fFA-sW-4wD"/>
+                            <constraint firstItem="NbW-0l-Yzo" firstAttribute="leading" secondItem="VUE-3Y-3yM" secondAttribute="leading" id="igb-ul-ZbD"/>
                             <constraint firstItem="VUE-3Y-3yM" firstAttribute="centerX" secondItem="eOe-El-J2A" secondAttribute="centerX" id="zmg-bM-Xco"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RHB-w5-BSQ"/>

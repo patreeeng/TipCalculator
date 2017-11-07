@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.billField.delegate = self;
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f", tip)
         totalLabel.text = String(format:"$%.2f", total)
     }
+    
     @IBAction func settingsButton(_ sender: Any) {
     // This section is for adding the pop up window for settings.
         
@@ -48,9 +50,13 @@ class ViewController: UIViewController {
         popSettings.view.frame = self.view.frame
         self.view.addSubview(popSettings.view)
         popSettings.didMove(toParentViewController: self)
-        
-        
     }
     
+    func textField(_ billfield: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        let allowedCharacters = CharacterSet.decimalDigits // Restrict input values to just numbers
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
 }
 

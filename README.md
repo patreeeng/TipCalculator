@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Restrict input values to only numbers and disallow letters and characters.
 
 ## Video Walkthrough
 
